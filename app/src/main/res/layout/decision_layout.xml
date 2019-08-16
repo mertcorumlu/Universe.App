@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/logo_text"
+            android:fontFamily="@font/universal_serif"
+            android:tag="count_number"
+            android:textColor="#404040"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:gravity="center|start"
+            android:hint="@string/main_activity_button1_text"
+            android:inputType="text"
+            android:tag="input_field"
+            tools:ignore="Autofill" />
+
+
+    </LinearLayout>
+</RelativeLayout>

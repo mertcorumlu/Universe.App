@@ -24,6 +24,7 @@
         android:layout_centerVertical="true"
         >
     <LinearLayout
+        android:id="@+id/layout_texbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -33,81 +34,40 @@
         >
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@drawable/edittext_background"
-            android:layout_marginBottom="20dp"
+            android:layout_margin="16dp"
+            android:layout_gravity="end"
+            >
 
-            tools:ignore="UselessParent">
-
-            <TextView
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#1"
-                android:fontFamily="@font/universal_serif"
-                android:textColor="#404040"
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="5dp"
-                android:contentDescription="@string/logo_text" />
+                android:layout_gravity="end"
+                android:src="@android:drawable/ic_input_add"
+               />
 
-
-
-                <EditText
-                    android:id="@+id/texbox1"
-                    android:layout_width="261dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
-                    android:gravity="center|start"
-                    android:hint="@string/main_activity_button1_text"
-                    android:inputType="text"
-                    android:backgroundTint="@android:color/darker_gray"
-                    tools:ignore="Autofill" />
-
-
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@android:drawable/ic_input_delete"
+                android:visibility="gone"
+                />
 
         </LinearLayout>
+
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/layout_to_put"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/edittext_background"
-            android:layout_marginBottom="20dp"
-
-            tools:ignore="UselessParent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="#2"
-                android:fontFamily="@font/universal_serif"
-                android:textColor="#404040"
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="5dp"
-                android:contentDescription="@string/logo_text" />
-
-
-
-            <EditText
-                android:id="@+id/texbox2"
-                android:layout_width="261dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:gravity="center|start"
-                android:hint="@string/main_activity_button1_text"
-                android:inputType="text"
-                android:backgroundTint="@android:color/darker_gray"
-                tools:ignore="Autofill" />
-
-
-
+            android:orientation="vertical"
+            >
         </LinearLayout>
-
 
 
 
@@ -126,6 +86,9 @@
             android:theme="@style/Widget.AppCompat.Button.Colored"
             android:layout_marginTop="30dp"
             />
+
+
+
 
     </LinearLayout>
 
