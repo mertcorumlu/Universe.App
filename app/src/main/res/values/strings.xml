@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Universe</string>
+    <string name="title_activity_decision">Decision</string>
+
+    <string name="logo_text">UNIVERSE!</string>
+    <string name="main_activity_button1_text">Are You Undecided?</string>
+    <string name="main_activity_button2_text">Looking For Your Future?</string>
+    <string name="main_text_or"><u>OR:</u></string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/main_background"
+    >
+
+    <ImageView
+        android:id="@+id/mainLogo"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp"
+        android:src="@mipmap/logo_no_text_rgb"
+        android:visibility="visible"
+        android:contentDescription="@string/logo_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mainLogo"
+        android:layout_marginTop="20dp"
+        android:text="@string/logo_text"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="textEnd"
+        android:textSize="37sp"
+        android:fontFamily="@font/universal_serif"
+
+        />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/mainLogo"
+    android:layout_marginTop="180dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    >
+
+    <Button
+        android:id="@+id/mainButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:background="@drawable/button_background"
+        android:text="@string/main_activity_button1_text"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/universal_serif"
+        android:theme="@style/Widget.AppCompat.Button.Colored"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/main_text_or"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#CCCCCC"
+        android:fontFamily="@font/universal_serif"
+        android:layout_margin="15dp"
+        />
+
+    <Button
+        android:id="@+id/mainButton2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:background="@drawable/button_background"
+        android:text="@string/main_activity_button2_text"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/universal_serif"
+        android:theme="@style/Widget.AppCompat.Button.Colored" />
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
